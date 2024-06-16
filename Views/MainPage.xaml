@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcoAlert_Maui.MainPage"
+             BackgroundColor="White">
+    <Grid RowDefinitions="50,*">
+        <StackLayout Grid.Row="0"
+                     Margin="10,10,10,0"
+                     Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand">
+            <Frame Padding="3"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="Start"
+                   CornerRadius="5"
+                   BorderColor="#E3E3E3"
+                   BackgroundColor="Transparent">
+                <ImageButton Source="menu.png"
+                             BackgroundColor="Transparent"
+                             WidthRequest="30"
+                             HorizontalOptions="Start"
+                             Margin="5"
+                             x:Name="btnMenu"
+                             Clicked="btnMenu_Clicked" />
+            </Frame>
+            <StackLayout HorizontalOptions="EndAndExpand"
+                         VerticalOptions="Center"
+                         Orientation="Horizontal"
+                         BackgroundColor="Transparent">
+                <Image Source="ecoalert_letras.png"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center" 
+                       WidthRequest="100"/>
+               
+            </StackLayout>
+        </StackLayout>
+        <ScrollView Grid.Row="1"
+                    Margin="0,30,0,0">
+            <StackLayout Spacing="10">
+                <Frame Padding="0"
+                       CornerRadius="20"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="10,0,10,0"
+                       HasShadow="True"
+                       HeightRequest="80"
+                       BackgroundColor="Green"
+                       BorderColor="Transparent"
+                       x:Name="frameStatus">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="changeStatus"
+                                              Tapped="changeStatus_Tapped" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout Margin="15,5,0,0" VerticalOptions="Center">
+                        <Label Text="STATUS:"
+                               FontSize="17"
+                               FontAttributes="Bold"
+                               TextColor="White"/>
+                        <Label Text="Condiciones Seguras"
+                               FontSize="15"
+                               FontAttributes="None"
+                               TextColor="White" 
+                               x:Name="lblStatus"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="0"
+                       CornerRadius="20"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="10,0,10,0"
+                       HasShadow="True">
+                    <WebView Source="https://www.windy.com/es/-Tormentas-el%C3%A9ctricas-thunder?"
+                             HeightRequest="300"
+                             VerticalOptions="FillAndExpand"
+                             HorizontalOptions="FillAndExpand" />
+                </Frame>
+                <StackLayout  Margin="10,10,10,0">
+                    <Label Text="Novedades"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

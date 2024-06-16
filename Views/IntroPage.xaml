@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcoAlert_Maui.Views.IntroPage"
+             Title=""
+             BackgroundColor="White">
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 Spacing="-10"
+                 Padding="0">
+        <Image Source="ecoalert_icono.png"
+               HeightRequest="200"
+               WidthRequest="200"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" 
+               x:Name="IconoEcoAlert"
+               Opacity="1"/>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center">
+            <Image Source="ecoalert_1.png"
+                   HeightRequest="60"
+                   WidthRequest="60"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" 
+                   x:Name="ecoalert1"
+                   TranslationX="-500"/>
+            <Image Source="ecoalert_2.png"
+                   HeightRequest="60"
+                   WidthRequest="80"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" 
+                   x:Name="ecoalert2"
+                   TranslationX="500"
+                   />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
