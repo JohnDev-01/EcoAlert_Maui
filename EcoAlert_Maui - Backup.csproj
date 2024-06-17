@@ -57,19 +57,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\auxilio.png" />
-	  <None Remove="Resources\Images\close.png" />
 	  <None Remove="Resources\Images\ecoalert_1.png" />
 	  <None Remove="Resources\Images\ecoalert_2.png" />
 	  <None Remove="Resources\Images\ecoalert_icono.png" />
 	  <None Remove="Resources\Images\ecoalert_letras.png" />
-	  <None Remove="Resources\Images\guia.png" />
 	  <None Remove="Resources\Images\menu.png" />
-	  <None Remove="Resources\Images\monitoreo.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Controls.UserDialogs.Maui" Version="1.5.4" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -77,15 +72,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\Auxilio.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\DirMonitoreo.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Guia.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Views\IntroPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

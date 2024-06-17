@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrestaYaApp.Views.Dashboard.MenuPopups"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False"
+             Title="MenuPopups">
+    <Grid RowDefinitions="50,11,*,60">
+        <!--Page Title-->
+        <StackLayout Grid.Row="0"
+                     Margin="10,10,10,0"
+                     Orientation="Horizontal"
+                     BackgroundColor="Transparent"
+                     HorizontalOptions="FillAndExpand">
+            <Frame Padding="3"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="Start"
+                   CornerRadius="5"
+                   BackgroundColor="Transparent"
+                   BorderColor="#E3E3E3">
+                <ImageButton Source="close.png"
+                             WidthRequest="30"
+                             BackgroundColor="Transparent"
+                             HorizontalOptions="Start"
+                             Margin="5"
+                             x:Name="btnBack"
+                             Clicked="btnBack_Clicked" />
+            </Frame>
+            <!--<StackLayout HorizontalOptions="EndAndExpand"
+                         VerticalOptions="Center"
+                         Orientation="Horizontal"
+                         BackgroundColor="Transparent">
+                <Label Text="Nombre de la empresa aqui"
+                       TextColor="Black"
+                       FontFamily="LatoBold"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                       VerticalTextAlignment="Center" />
+                <Image Source="changeprofile.png"
+                       WidthRequest="50" />
+            </StackLayout>-->
+        </StackLayout>
+        <!--Divisor-->
+        <BoxView BackgroundColor="DimGray"
+                 Grid.Row="1"
+                 Margin="0,10,0,0"
+                 Opacity="0.2" />
+        <!--Botones-->
+        <ScrollView Grid.Row="2"
+                    Margin="10,20,10,0">
+            <StackLayout>
+                <!--Contenedor visual de botones para la seccion general -->
+                <Label Text="General"
+                       TextColor="DimGray"
+                       FontSize="17"
+                       FontFamily="LatoBold"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                       VerticalTextAlignment="Center" />
+                <StackLayout Margin="0,30,0,0"
+                             Spacing="40">
+                    <HorizontalStackLayout Spacing="10">
+                        <HorizontalStackLayout.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="DirMonitoreo"
+                                                  Tapped="DirMonitoreo_Tapped" />
+                        </HorizontalStackLayout.GestureRecognizers>
+                        <Image Source="monitoreo.png"
+                               WidthRequest="30" />
+                        <Label Text="Dirección y monitoreo"
+                               TextColor="Black"
+                               FontSize="17"
+                               FontFamily="LatoBold"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               VerticalTextAlignment="Center" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Spacing="10">
+                        <HorizontalStackLayout.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="auxilio"
+                                                  Tapped="auxilio_Tapped" />
+                        </HorizontalStackLayout.GestureRecognizers>
+                        <Image Source="auxilio.png"
+                               WidthRequest="30" />
+                        <Label Text="Primeros auxilios"
+                               TextColor="Black"
+                               FontSize="17"
+                               FontFamily="LatoBold"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               VerticalTextAlignment="Center" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Spacing="10">
+                        <HorizontalStackLayout.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="guia"
+                                                  Tapped="guia_Tapped"/>
+                        </HorizontalStackLayout.GestureRecognizers>
+                        <Image Source="guia.png"
+                               WidthRequest="30" />
+                        <Label Text="Guías de preparación"
+                               TextColor="Black"
+                               FontSize="17"
+                               FontFamily="LatoBold"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Center"
+                               VerticalTextAlignment="Center" />
+                    </HorizontalStackLayout>
+                    
+                   
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

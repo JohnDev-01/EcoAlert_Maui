@@ -19,6 +19,6 @@ public partial class IntroPage : ContentPage
             await IconoEcoAlert.FadeTo(0, 1100);
             await IconoEcoAlert.FadeTo(1, 1100);
         }
-        Application.Current.MainPage = new MainPage();
+        Application.Current.MainPage = new NavigationPage(new MainPage());
     }
 }
