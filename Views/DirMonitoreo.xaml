@@ -1,12 +1,167 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:labellinks="clr-namespace:EcoAlert_Maui.VisualElement"
              x:Class="EcoAlert_Maui.Views.DirMonitoreo"
-             Title="DirMonitoreo">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Dirección y monitoreo"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+    <StackLayout>
+        <!--Bar navigation-->
+        <StackLayout Orientation="Horizontal"
+                     BackgroundColor="Transparent"
+                     HeightRequest="40"
+                     Margin="10,10,0,0"
+                     Spacing="5">
+            <ImageButton Source="volveratras.png"
+                         WidthRequest="40" />
+            <Label Text="Dirección y monitoreo"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center" />
+        </StackLayout>
+        <!--Divisor-->
+        <BoxView BackgroundColor="Black"
+                 Margin="0,10,0,0"
+                 Opacity="0.2"
+                 HeightRequest="1"/>
+        <!--Body -->
+        <StackLayout Margin="10,20,0,0">
+            <!--Agencias Nacionales-->
+            <StackLayout Orientation="Horizontal"
+                         Spacing="5">
+                <Image Source="monitoreo.png"
+                       WidthRequest="30"
+                       VerticalOptions="Center" />
+                <Label Text="Agencias nacionales: "
+                       TextColor="#515151"
+                       FontSize="17"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+            </StackLayout>
+            <Frame Margin="0,10,10,0"
+                   BorderColor="#2AABFF"
+                   BackgroundColor="#F4F4F4"
+                   CornerRadius="10"
+                   HeightRequest="60"
+                   Padding="0">
+                <StackLayout Orientation="Horizontal"
+                             Spacing="5"
+                             Margin="5,0,0,0">
+                    <Image Source="link.png"
+                           WidthRequest="30"
+                           VerticalOptions="Center" />
+                    <labellinks:Hyperlink Url="https://www.coe.gob.do/"
+                                          Text="COE"
+                                          VerticalOptions="Center"
+                                          FontSize="17"
+                                          /> 
+                </StackLayout>
+            </Frame>
+            <Frame Margin="0,10,10,0"
+                   BorderColor="#2AABFF"
+                   BackgroundColor="#F4F4F4"
+                   CornerRadius="10"
+                   HeightRequest="60"
+                   Padding="0">
+                <StackLayout Orientation="Horizontal"
+                             Spacing="5"
+                             Margin="5,0,0,0">
+                    <Image Source="link.png"
+                           WidthRequest="30"
+                           VerticalOptions="Center" />
+                    <labellinks:Hyperlink Url="https://indrhi.gob.do/"
+                                          Text="INDRHI"
+                                          VerticalOptions="Center"
+                                          FontSize="17" />
+                </StackLayout>
+            </Frame>
+            <Frame Margin="0,10,10,0"
+                   BorderColor="#2AABFF"
+                   BackgroundColor="#F4F4F4"
+                   CornerRadius="10"
+                   HeightRequest="60"
+                   Padding="0">
+                <StackLayout Orientation="Horizontal"
+                             Spacing="5"
+                             Margin="5,0,0,0">
+                    <Image Source="link.png"
+                           WidthRequest="30"
+                           VerticalOptions="Center" />
+                    <labellinks:Hyperlink Url="https://onamet.gob.do/index.php/pronosticos/informe-del-tiempo"
+                                          Text="ONAMET"
+                                          VerticalOptions="Center"
+                                          FontSize="17" />
+                </StackLayout>
+            </Frame>
+            <!--Agencias Internacionales-->
+            <StackLayout Orientation="Horizontal"
+                         Spacing="5"
+                         Margin="0,10,0,0">
+                <Image Source="monitoreo.png"
+                       WidthRequest="30"
+                       VerticalOptions="Center" />
+                <Label Text="Agencias internacionales: "
+                       TextColor="#515151"
+                       FontSize="17"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+            </StackLayout>
+            <Frame Margin="0,10,10,0"
+                   BorderColor="#2AABFF"
+                   BackgroundColor="#F4F4F4"
+                   CornerRadius="10"
+                   HeightRequest="60"
+                   Padding="0">
+                <StackLayout Orientation="Horizontal"
+                             Spacing="5"
+                             Margin="5,0,0,0">
+                    <Image Source="link.png"
+                           WidthRequest="30"
+                           VerticalOptions="Center" />
+                    <labellinks:Hyperlink Url="https://www.nhc.noaa.gov/"
+                                          Text="NOAA"
+                                          VerticalOptions="Center"
+                                          FontSize="17" />
+                </StackLayout>
+            </Frame>
+            <Frame Margin="0,10,10,0"
+                   BorderColor="#2AABFF"
+                   BackgroundColor="#F4F4F4"
+                   CornerRadius="10"
+                   HeightRequest="60"
+                   Padding="0">
+                <StackLayout Orientation="Horizontal"
+                             Spacing="5"
+                             Margin="5,0,0,0">
+                    <Image Source="link.png"
+                           WidthRequest="30"
+                           VerticalOptions="Center" />
+                    <labellinks:Hyperlink Url="https://www.emsc-csem.org/"
+                                          Text="EMSC"
+                                          VerticalOptions="Center"
+                                          FontSize="17" />
+                </StackLayout>
+            </Frame>
+            <Frame Margin="0,10,10,0"
+                   BorderColor="#2AABFF"
+                   BackgroundColor="#F4F4F4"
+                   CornerRadius="10"
+                   HeightRequest="60"
+                   Padding="0">
+                <StackLayout Orientation="Horizontal"
+                             Spacing="5"
+                             Margin="5,0,0,0">
+                    <Image Source="link.png"
+                           WidthRequest="30"
+                           VerticalOptions="Center" />
+                    <labellinks:Hyperlink Url="https://earthquake.usgs.gov/earthquakes"
+                                          Text="USGS"
+                                          VerticalOptions="Center"
+                                          FontSize="17" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>

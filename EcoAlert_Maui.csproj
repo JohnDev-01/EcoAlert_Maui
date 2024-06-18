@@ -64,8 +64,10 @@
 	  <None Remove="Resources\Images\ecoalert_icono.png" />
 	  <None Remove="Resources\Images\ecoalert_letras.png" />
 	  <None Remove="Resources\Images\guia.png" />
+	  <None Remove="Resources\Images\link.png" />
 	  <None Remove="Resources\Images\menu.png" />
 	  <None Remove="Resources\Images\monitoreo.png" />
+	  <None Remove="Resources\Images\volveratras.png" />
 	</ItemGroup>
 
 	<ItemGroup>
