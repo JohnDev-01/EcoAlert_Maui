@@ -26,19 +26,7 @@
                              x:Name="btnBack"
                              Clicked="btnBack_Clicked" />
             </Frame>
-            <!--<StackLayout HorizontalOptions="EndAndExpand"
-                         VerticalOptions="Center"
-                         Orientation="Horizontal"
-                         BackgroundColor="Transparent">
-                <Label Text="Nombre de la empresa aqui"
-                       TextColor="Black"
-                       FontFamily="LatoBold"
-                       HorizontalOptions="FillAndExpand"
-                       VerticalOptions="Center"
-                       VerticalTextAlignment="Center" />
-                <Image Source="changeprofile.png"
-                       WidthRequest="50" />
-            </StackLayout>-->
+           
         </StackLayout>
         <!--Divisor-->
         <BoxView BackgroundColor="DimGray"
