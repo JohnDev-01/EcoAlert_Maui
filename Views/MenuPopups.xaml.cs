@@ -10,11 +10,11 @@ public partial class MenuPopups : ContentPage
 	protected override async void OnAppearing()
 	{
 		base.OnAppearing();
-		this.TranslationX = -Width; // Comienza fuera de la pantalla por la izquierda
+		this.TranslationX = -Width; 
 		this.Opacity = 0;
 		await Task.WhenAll(
-			this.TranslateTo(0, 0, 1500, Easing.SpringOut), // Mueve desde la izquierda
-			this.FadeTo(1, 500) // Cambia la opacidad a 1 simultáneamente
+			this.TranslateTo(0, 0, 1500, Easing.SpringOut), 
+			this.FadeTo(1, 500)
 		);
 		typePage = null;
 	}
